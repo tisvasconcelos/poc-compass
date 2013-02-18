@@ -1,0 +1,13 @@
+body{
+	font: Arial;
+
+	$icons: sprite-map("/ico/*.png");
+
+	& a{
+		color: #ff0000;
+
+		width: image-width('ico/more.png');
+		height: image-height('ico/more.png');
+		background: inline-sprite($icons) sprite-position($icons, more);
+	}
+}
